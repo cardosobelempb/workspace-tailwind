@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output/output.css" />
+    <title>Tailwind CLI</title>
+  </head>
+  <body class="">
+    <main
+      class="flex flex-col items-center md:rounded gap-y-4 xl:gap-y-12 md:border-2 md:border-purple-600/20 md:p-8"
+    >
+      <div class="text-center space-y-2">
+        <h6 class="text-purple-600">Newsletter</h6>
+        <h1 class="text-2xl sm:text-4xl font-bold">
+          Subscribe to our Newsletter
+        </h1>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          molestias ipsum ex eveniet officiis.
+        </p>
+      </div>
+      <form
+        action=""
+        class="w-full flex flex-col gap-6 *:rounded *:text-xl shadow-md p-5 md:flex-row sm:w-3/4 *:px-4 *:py-2"
+      >
+        <input
+          type="email"
+          class="basis-full focus:outline-none border-2 border-purple-600/20 placeholder:text-purple-600/40"
+          placeholder="Your Email Address"
+        />
+        <input
+          type="submit"
+          class="bg-purple-600 text-white border-2 border-transparent cursor-pointer hover:bg-white hover:text-purple-600 hover:border-2 hover:border-purple-600 transition"
+          value="Subscribe"
+        />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Responsive Design</title>
+  </head>
+  <body>
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Responsive Design *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+    Breakpoint prefix        Minimum width     CSS
+    sm	                     640px	           @media (min-width: 640px) { ... }
+    md	                     768px	           @media (min-width: 768px) { ... }
+    lg	                     1024px	           @media (min-width: 1024px) { ... }
+    xl	                     1280px	           @media (min-width: 1280px) { ... }
+    2xl	                     1536px	           @media (min-width: 1536px) { ... }
+    --------------------------------
+    --------------------------------
+
+
+ module.exports = {
+  theme: {
+    screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+  }
+}
+
+    -->
+
+    <div class="bg-white dark:bg-gray-900 min-h-screen text-center pt-40 md:pt-64">
+
+      <article class="max-w-4xl mx-auto text-gray-800 dark:text-gray-200">
+        <p class="text-lg sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium transition-all duration-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odio architecto neque ducimus voluptas voluptates modi optio ipsam alias, commodi perspiciatis earum unde harum eaque expedita facilis quasi hic dolores.</p>
+      </article>
+
+      <article class="w-full max-w-lg mx-auto bg-purple-600 dark:bg-purple-800 text-white border border-purple-300 dark:border-purple-600 rounded-xl p-5 sm:p-7 md:p-10 lg:p-12 xl:p-14 2xl:p-16 shadow-2xl">
+        <header class="">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+        </header>
+        <p class="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus exercitationem voluptatum ea tempore pariatur corrupti non laborum eum similique id, dolorum unde! Ratione accusantium, voluptatibus earum eveniet quod rem necessitatibus.</p>
+        <footer class="mt-10 text-center">
+          <a href="#" class="inline-block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-yellow-300 dark:text-yellow-400 hover:underline">RSPV now</a>
+        </footer>
+      </article>
+
+      <h1 class="text-center font-bold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl p-4 md:p-8 lg:p-12 text-slate-900 dark:text-white mt-40 md:mt-64">Welcome</h1>
+      
+      <button
+      class="bg-blue-500 dark:bg-blue-700 text-white font-semibold rounded-lg text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 transition-transform duration-300 hover:scale-110">Click
+      Me!</button>
+
+      <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus, ea quod sint ab minima, sequi eligendi odit exercitationem labore sunt. Quasi neque laborum quisquam quia molestiae, eos consequuntur illum.</p>
+    </div>
+      <div
+      class="h-96 bg-orange-400 sm:bg-cyan-400 md:bg-amber-400 lg:bg-slate-400 xl:bg-lime-400 2xl:bg-teal-400"
+    ></div>
+  </body>
+</html>

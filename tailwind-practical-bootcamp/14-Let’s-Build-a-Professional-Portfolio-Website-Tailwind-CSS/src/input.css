@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: 0deg 0% 14%;
+        --color-secondary: 0deg 0% 18%;
+        --color-accent: 3deg 74% 65%;
+        --color-text: 0deg 0% 100%;
+    }
+
+    img {
+        @apply rounded
+    h-full
+    object-cover;
+    }
+}
+
+@layer components {
+    body {
+        @apply 2xl:max-w-screen-2xl
+    2xl:mx-auto
+    2xl:bg-primary;
+    }
+
+    .container__default {
+        @apply p-6 flex flex-col gap-y-10 md:p-16 lg:gap-x-10 lg:flex-row-reverse *:basis-full 2xl:rounded;
+    }
+
+    .content__default {
+        @apply space-y-5 *:space-y-2 lg:self-center xl:space-y-10;
+    }
+
+    .box__default {
+        @apply space-y-5 *:space-y-2 lg:self-center xl:space-y-10;
+    }
+
+    .default__link {
+        @apply uppercase border-2 border-accent p-2 text-xs rounded sm:text-base hover:cursor-pointer sm:px-4;
+    }
+
+    .nav {
+        @apply flex
+    flex-col
+    gap-6
+    fixed
+    rounded
+    top-0
+    right-0
+    bg-accent/40
+    backdrop-blur-lg
+    p-24
+    z-20
+    scale-y-0
+    origin-bottom
+    transition-transform
+    duration-300;
+    }
+
+    .nav.open {
+        @apply scale-y-100
+    origin-top;
+    }
+
+    .nav--link {
+        @apply py-2
+    text-lg
+    relative
+    transition-colors
+    hover:text-secondary
+    before:content-['']
+    before:absolute
+    before:w-2/4
+    before:h-px
+    hover:before:origin-left
+    before:bg-secondary
+    before:left-0
+    before:bottom-0
+    before:scale-x-0
+    hover:before:scale-x-100
+    before:origin-right
+    before:transition-transform;
+    }
+
+    .hamburger {
+        @apply fixed
+    bg-accent
+    py-5
+    top-[30px]
+    right-2/4
+    translate-x-2/4
+    h-8
+    w-12
+    z-30
+    rounded
+    cursor-pointer
+    before:content-['']
+    before:h-0.5
+    before:w-2/3
+    before:bg-text
+    before:absolute
+    before:top-4
+    before:left-2
+    after:content-['']
+    after:h-0.5
+    after:w-1/3
+    after:bg-text
+    after:absolute
+    after:top-6
+    after:left-2
+    before:transition
+    after:transition;
+    }
+
+    .hamburger.close {
+        @apply before:rotate-45
+    before:translate-y-1
+    after:w-2/3
+    after:-rotate-45
+    after:-translate-y-1;
+    }
+
+    .before {
+        @apply before:absolute
+    before:content-['']
+    before:rounded-full
+    before:bg-accent;
+    }
+
+    .after {
+        @apply after:absolute
+    after:content-['']
+    after:rounded-full
+    after:bg-accent;
+    }
+
+    .default__text-h6 {
+        @apply text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:top-2/4 before:left-0 before:-translate-y-2/4 lg:text-lg;
+    }
+
+    .default__text-h2 {
+        @apply text-2xl capitalize font-bold lg:text-3xl;
+    }
+
+    .default__text-h1 {
+        @apply text-5xl font-bold lg:text-7xl;
+    }
+
+    .before__element {
+        @apply lg:max-w-[550px] xl:relative xl:before xl:before:top-0 xl:before:left-0 xl:h-full xl:before:w-5 xl:before:h-full xl:pl-20;
+    }
+}

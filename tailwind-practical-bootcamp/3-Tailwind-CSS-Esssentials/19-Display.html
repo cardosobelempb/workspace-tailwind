@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Display</title>
+  </head>
+  <body class="bg-zinc-800">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Display *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    block	                  display: block;
+    inline	                display: inline;
+    inline-block	          display: inline-block;
+
+    --------------------------------
+    --------------------------------
+
+    -->
+
+    <nav aria-label="Progress" class="max-w-xl mx-auto">
+      <ol role="list" class="text-center">
+        <li class="inline-block relative pr-8 last:pr-0">
+          <div class="w-8 h-8 rounded-full bg-blue-600 text-white inline-block text-center leading-8">1</div>
+          <div class="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">Step 1</div>
+          <div class="absolute top-4 right-3 w-5 h-0.5 bg-gray-300 dark:bg-gray-700 hidden sm:block"></div>
+        </li>
+        <li class="inline-block relative pr-8 last:pr-0">
+          <div class="w-8 h-8 rounded-full border-2 border-blue-600 text-blue-600 inline-block text-center leading-7">2
+          </div>
+          <div class="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">Step 2</div>
+          <div class="absolute top-4 right-3 w-5 h-0.5 bg-gray-300 dark:bg-gray-700 hidden sm:block"></div>
+        </li>
+        <li class="inline-block relative pr-8 last:pr-0">
+          <div
+            class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-700 text-gray-400 dark:text-gray-600 inline-block text-center leading-7">
+            3</div>
+          <div class="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">Step 3</div>
+          <div class="absolute top-4 right-3 w-5 h-0.5 bg-gray-300 dark:bg-gray-700 hidden sm:block"></div>
+        </li>
+        <li class="inline-block relative pr-8 last:pr-0">
+          <div
+            class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-700 text-gray-400 dark:text-gray-600 inline-block text-center leading-7">
+            4</div>
+          <div class="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">Step 4</div>
+          <div class="absolute top-4 right-3 w-5 h-0.5 bg-gray-300 dark:bg-gray-700 hidden sm:block"></div>
+        </li>
+        <li class="inline-block relative pr-8 last:pr-0">
+          <div
+            class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-700 text-gray-400 dark:text-gray-600 inline-block text-center leading-7">
+            5</div>
+          <div class="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">Step 5</div>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+      <div class="p-4 relative">
+      <h2 class="text-xl font-bold text-gray-800 dark:text-white inline-block">Messages</h2>
+        <button
+          class="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+          </path>
+        </svg>
+        </button>
+      </div>
+      <div class="px-4 pb-2">
+        <div class="relative">
+          <input type="text" placeholder="Search.."
+            class="w-full py-2 px-4 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full outline-none transition-colors duration-200 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400">
+          <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+        <li class="p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
+          <div class="relative h-10">
+            <img src="..." alt="..." class="w-10 h-10 rounded-full absolute left-0 top-0 object-cover">
+            <span
+              class="absolute bottom-0 left-7 w-3 h-3 bg-green-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+            <div class="absolute left-14 top-0 right-16">
+            <div class="font-semibold text-gray-800 dark:text-white">Danish Hebo</div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 truncate">Hello devid, how are you today?</p>
+            </div>
+            <div class="absolute top-0 right-0 text-xs text-gray-500 dark:text-gray-400">Dec, 8</div>
+            <div class="absolute bottom-0 right-0 w-5 h-5 bg-blue-500 rounded-full text-xs text-white text-center leading-5">5</div>
+          </div>
+        </li>
+        <li class="p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
+          <div class="relative h-10">
+            <img src="..." alt="..." class="w-10 h-10 rounded-full absolute left-0 top-0 object-cover">
+            <span
+              class="absolute bottom-0 left-7 w-3 h-3 bg-green-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+            <div class="absolute left-14 top-0 right-16">
+              <div class="font-semibold text-gray-800 dark:text-white">Danish Hebo</div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 truncate">Hello devid, how are you today?</p>
+            </div>
+            <div class="absolute top-0 right-0 text-xs text-gray-500 dark:text-gray-400">Dec, 8</div>
+            <div class="absolute bottom-0 right-0 w-5 h-5 bg-blue-500 rounded-full text-xs text-white text-center leading-5">5
+            </div>
+          </div>
+        </li>
+        <li class="p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
+          <div class="relative h-10">
+            <img src="..." alt="..." class="w-10 h-10 rounded-full absolute left-0 top-0 object-cover">
+            <span
+              class="absolute bottom-0 left-7 w-3 h-3 bg-green-500 border-2 border-white dark:border-gray-800 rounded-full"></span>
+            <div class="absolute left-14 top-0 right-16">
+              <div class="font-semibold text-gray-800 dark:text-white">Danish Hebo</div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 truncate">Hello devid, how are you today?</p>
+            </div>
+            <div class="absolute top-0 right-0 text-xs text-gray-500 dark:text-gray-400">Dec, 8</div>
+            <div class="absolute bottom-0 right-0 w-5 h-5 bg-blue-500 rounded-full text-xs text-white text-center leading-5">5
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-slate-200 mx-6 my-8 p-4 inline">Intrinsically Block</div>
+    <div class="bg-slate-200 mx-6 my-8 p-4 inline">Intrinsically Block</div>
+
+    <span class="bg-slate-500 text-white mx-6 my-8 p-4 inline-block"
+      >Intrinsically Inline</span
+    >
+    <span class="bg-slate-500 text-white mx-6 my-8 p-4 inline-block"
+      >Intrinsically Inline</span
+    >
+  </body>
+</html>
