@@ -1,7 +1,9 @@
 "use client";
 
 import { showcase } from "@/app/assets/images/portifolio";
+import { HeadingRoot } from "@/components/heading-root/heading.root";
 import { ImageRoot } from "@/components/image-root/image.root";
+import { ParagraphRoot } from "@/components/paragraph-root/paragraph.root";
 import { Dribbble, Facebook, Twitter, Youtube } from "lucide-react";
 import { useState } from "react";
 
@@ -10,13 +12,12 @@ export default function PortfolioHeader() {
   const [hamburge, setHamburge] = useState(false);
 
   const handleOpenHamburge = () => {
-    console.log(open);
     setNavibar(!navbar);
     setHamburge(!hamburge);
   };
 
   return (
-    <header className="p-6 bg-primary text-text relative md:p-16">
+    <header className="p-6 bg-primary text-text relative md:space-y-16">
       <nav className={`p-2 flex justify-between items-center`}>
         <a className="text-accent" href="#">
           JD
@@ -66,40 +67,52 @@ export default function PortfolioHeader() {
           className={`hamburger sm:hidden ${hamburge ? "open" : "close"}`}
         ></div>
 
-        <a href="#">Book Now</a>
+        <a
+          className="uppercase border-2 border-accent text-xs p-2 rounded sm:text-base sm:px-4"
+          href="#"
+        >
+          Book Now
+        </a>
       </nav>
 
-      <section>
-        <div>
-          <div>
-            <h6>Professional Photographer</h6>
-            <h1>John Doe</h1>
+      <section className="flex flex-col gap-10 lg:flex-row lg:*:basis-full lg:gap-x-24 xl:gap-x-12">
+        <div className="flex flex-col gap-y-5 lg:gap-y-12 xl:self-center xl:gap-y-24">
+          <div className="space-y-2 lg:space-y-4">
+            <h6 className="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">
+              Professional Photographer
+            </h6>
+            <HeadingRoot type="h1">John Doe</HeadingRoot>
           </div>
 
-          <div>
-            <ul>
-              <li>
+          <div className="flex flex-col gap-y-5 lg:gap-y-8 xl:pl-16 before xl:before xl:relative xl:before:h-full xl:before:w-5 xl:before:top-0 xl:before:left-0 xl:before:bg-accent">
+            <ul className="flex gap-x-4">
+              <li className="hover:text-accent transition-colors cursor-pointer">
                 <Facebook />
               </li>
-              <li>
+              <li className="hover:text-accent transition-colors cursor-pointer">
                 <Twitter />
               </li>
-              <li>
+              <li className="hover:text-accent transition-colors cursor-pointer">
                 <Dribbble />
               </li>
-              <li>
+              <li className="hover:text-accent transition-colors cursor-pointer">
                 <Youtube />
               </li>
             </ul>
 
-            <p>
+            <ParagraphRoot>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque sodales at nunc quis semper. Class aptent taciti
               sociosqu ad litora torquent per conubia nostra, per inceptos
               himenaeos. Fusce
-            </p>
+            </ParagraphRoot>
 
-            <a href="#">View Portfolio</a>
+            <a
+              className="uppercase p-2 sm:px-4 border-2 border-accent self-start rounded text-xs sm:text-base"
+              href="#"
+            >
+              View Portfolio
+            </a>
           </div>
         </div>
 

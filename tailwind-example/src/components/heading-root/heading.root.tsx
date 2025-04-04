@@ -12,7 +12,7 @@ export const HeadingRoot: React.FC<HeadingRootProps> = (props) => {
         return (
           <h1
             {...props}
-            className={`text-2xl font-bold sm:text-3xl xl:text-5xl ${props.className}`}
+            className={`text-5xl font-bold sm:text-3xl xl:text-7xl ${props.className}`}
           >
             {props.children}
           </h1>

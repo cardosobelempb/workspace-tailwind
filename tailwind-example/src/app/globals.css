@@ -40,11 +40,11 @@
   }*/
 
   img {
-    @apply rounded max-w-full size-[100vh] h-full object-cover grayscale transition;
+    @apply rounded max-w-full size-[100vh] h-full object-cover;
 
-    &:hover {
+    /* &:hover {
       @apply grayscale-0;
-    }
+    } */
   }
 }
 
