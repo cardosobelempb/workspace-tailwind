@@ -16,7 +16,7 @@ type ImageRootProps = {
 
 export const ImageRoot: React.FC<ImageRootProps> = (props) => {
   return (
-    <figure className={props.classFigure}>
+    <figure className={`${props.classFigure}`}>
       <Image
         className={props.classImage}
         src={props.src}

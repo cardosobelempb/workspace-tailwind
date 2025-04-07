@@ -78,9 +78,7 @@ export default function PortfolioHeader() {
       <section className="flex flex-col gap-10 lg:flex-row lg:*:basis-full lg:gap-x-24 xl:gap-x-12">
         <div className="flex flex-col gap-y-5 lg:gap-y-12 xl:self-center xl:gap-y-24">
           <div className="space-y-2 lg:space-y-4">
-            <h6 className="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">
-              Professional Photographer
-            </h6>
+            <HeadingRoot type="h6">Professional Photographer</HeadingRoot>
             <HeadingRoot type="h1">John Doe</HeadingRoot>
           </div>
 
@@ -116,7 +114,10 @@ export default function PortfolioHeader() {
           </div>
         </div>
 
-        <ImageRoot src={showcase.src} />
+        <ImageRoot
+          classFigure="lg:max-w-[550px] lg:relative lg:before:absolute lg:before:content-[''] lg:before:border-[20px] lg:before:rounded lg:before:border-accent lg:before:h-96 lg:before:w-96 lg:before:-top-12 lg:before:-left-12 lg:before:-z-10 lg:z-10"
+          src={showcase.src}
+        />
       </section>
     </header>
   );

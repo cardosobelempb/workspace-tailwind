@@ -1,7 +1,4 @@
-import { ChevronRight } from "lucide-react";
-
 import {
-  abount,
   client,
   contact,
   contact1,
@@ -26,6 +23,8 @@ import {
   testimonial,
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
+import ContentAbount from "@/components/protfolio/portfolio-content/content-about";
+import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
 export default function PortfolioPage() {
@@ -35,67 +34,10 @@ export default function PortfolioPage() {
 
       <main>
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Motto --> */}
-        <section>
-          <div>
-            <blockquote cite="https://www.azquotes.com/author/8044-Martin_Luther_King_Jr/tag/brother">
-              <p>
-                Weve learned to fly the air like birds, weve learned to swim the
-                seas like fish, and yet we havent learned to walk the earth as
-                brothers and sisters.
-              </p>
-            </blockquote>
-            <p>
-              — Martin Luther King, Jr., <cite>Love</cite>
-            </p>
-          </div>
-        </section>
+        <ContentMotto />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* About me --> */}
-        <section>
-          <div>
-            <div>
-              <div>
-                <h6>About me</h6>
-                <h2>Professional Photographer</h2>
-              </div>
-
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Tempora corporis eveniet, doloribus impedit fuga eum accusamus
-                  libero recusandae modi odio, a voluptatem necessitatibus? Eos,
-                  commodi!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium doloremque nesciunt quod sapiente voluptates?
-                  Natus nihil ab illum corrupti quos?
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h3>My Awards</h3>
-
-              <ul>
-                <li>
-                  <ChevronRight />
-                  <span>Award 1</span>
-                </li>
-                <li>
-                  <ChevronRight />
-                  <span>Award 2</span>
-                </li>
-                <li>
-                  <ChevronRight />
-                  <span>Award 3</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <ImageRoot src={abount.src} />
-        </section>
+        <ContentAbount />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Gallery --> */}
         <section>

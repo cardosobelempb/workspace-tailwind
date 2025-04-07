@@ -23,17 +23,26 @@ export const HeadingRoot: React.FC<HeadingRootProps> = (props) => {
             {props.children}
           </h2>
         );
+      case "h3":
+        return (
+          <h3
+            {...props}
+            className={`text-lg font-semibold lg:text-xl ${props.className}`}
+          >
+            {props.children}
+          </h3>
+        );
       case "h6":
         return (
-          <h2 {...props} className={`text-lg font-semibold ${props.className}`}>
+          <h6 className="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">
             {props.children}
-          </h2>
+          </h6>
         );
       case "h5":
         return (
-          <h2 {...props} className={`font-bold ${props.className}`}>
+          <h5 {...props} className={`font-bold ${props.className}`}>
             {props.children}
-          </h2>
+          </h5>
         );
 
       default:
