@@ -6,11 +6,6 @@ import {
   contact3,
   contact4,
   form,
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
   news1,
   news2,
   portfolio1,
@@ -24,6 +19,7 @@ import {
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
 import ContentAbount from "@/components/protfolio/portfolio-content/content-about";
+import ContentGallery from "@/components/protfolio/portfolio-content/content-gallery";
 import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
@@ -40,37 +36,7 @@ export default function PortfolioPage() {
         <ContentAbount />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Gallery --> */}
-        <section>
-          <ImageRoot
-            src={gallery1.src}
-            isCaption
-            captionTitle="Gallery Image"
-          />
-
-          <ImageRoot
-            src={gallery2.src}
-            isCaption
-            captionTitle="Gallery Image"
-          />
-
-          <ImageRoot
-            src={gallery3.src}
-            isCaption
-            captionTitle="Gallery Image"
-          />
-
-          <ImageRoot
-            src={gallery4.src}
-            isCaption
-            captionTitle="Gallery Image"
-          />
-
-          <ImageRoot
-            src={gallery5.src}
-            isCaption
-            captionTitle="Gallery Image"
-          />
-        </section>
+        <ContentGallery />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Skills --> */}
         <section>

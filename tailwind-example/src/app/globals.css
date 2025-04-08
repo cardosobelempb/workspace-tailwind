@@ -68,10 +68,10 @@
   }
 
   .before {
-    @apply before before:absolute before:content-['']  before:rounded-full before:bg-accent;
+    @apply before:absolute before:content-['']  before:rounded-full before:bg-accent;
   }
 
   .after {
-    @apply after after:absolute after:content-['']  after:rounded-full after:bg-accent;
+    @apply after:absolute after:content-['']  after:rounded-full after:bg-accent;
   }
 }
