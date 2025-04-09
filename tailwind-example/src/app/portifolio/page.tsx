@@ -8,8 +8,6 @@ import {
   form,
   news1,
   news2,
-  portfolio1,
-  portfolio2,
   service1,
   service2,
   service3,
@@ -21,6 +19,7 @@ import { FlexContainerRoot } from "@/components/layout-root/flex/flex-container.
 import ContentAbount from "@/components/protfolio/portfolio-content/content-about";
 import ContentGallery from "@/components/protfolio/portfolio-content/content-gallery";
 import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
+import ContentPortfolio from "@/components/protfolio/portfolio-content/content-portfolio";
 import ContentSkills from "@/components/protfolio/portfolio-content/content-skills";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
@@ -42,34 +41,7 @@ export default function PortfolioPage() {
         <ContentSkills />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Portfolio --> */}
-        <section>
-          <div>
-            <div>
-              <h6>My Portfolio</h6>
-              <h2>Recent Works</h2>
-            </div>
-
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora corporis eveniet, doloribus impedit fuga eum accusamus
-                libero recusandae modi odio, a voluptatem necessitatibus? Eos,
-                commodi!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium doloremque nesciunt quod sapiente voluptates? Natus
-                nihil ab illum corrupti quos?
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <ImageRoot src={portfolio1.src} />
-
-            <ImageRoot src={portfolio2.src} />
-          </div>
-        </section>
+        <ContentPortfolio />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Services --> */}
         <section>
