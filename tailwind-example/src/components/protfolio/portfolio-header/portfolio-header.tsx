@@ -4,6 +4,7 @@ import { showcase } from "@/app/assets/images/portifolio";
 import { HeadingRoot } from "@/components/heading-root/heading.root";
 import { ImageRoot } from "@/components/image-root/image.root";
 import { ParagraphRoot } from "@/components/paragraph-root/paragraph.root";
+import LinkDefaultRoot from "@/components/shared/link-default.root";
 import { Dribbble, Facebook, Twitter, Youtube } from "lucide-react";
 import { useState } from "react";
 
@@ -67,12 +68,7 @@ export default function PortfolioHeader() {
           className={`hamburger sm:hidden ${hamburge ? "open" : "close"}`}
         ></div>
 
-        <a
-          className="uppercase border-2 border-accent text-xs p-2 rounded sm:text-base sm:px-4"
-          href="#"
-        >
-          Book Now
-        </a>
+        <LinkDefaultRoot href="#">Book Now</LinkDefaultRoot>
       </nav>
 
       <section className="flex flex-col gap-10 lg:flex-row lg:*:basis-full lg:gap-x-24 xl:gap-x-12">

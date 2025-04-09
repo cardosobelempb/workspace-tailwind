@@ -8,10 +8,6 @@ import {
   form,
   news1,
   news2,
-  service1,
-  service2,
-  service3,
-  service4,
   testimonial,
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
@@ -20,6 +16,7 @@ import ContentAbount from "@/components/protfolio/portfolio-content/content-abou
 import ContentGallery from "@/components/protfolio/portfolio-content/content-gallery";
 import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
 import ContentPortfolio from "@/components/protfolio/portfolio-content/content-portfolio";
+import ContentServices from "@/components/protfolio/portfolio-content/content-services";
 import ContentSkills from "@/components/protfolio/portfolio-content/content-skills";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
@@ -44,61 +41,7 @@ export default function PortfolioPage() {
         <ContentPortfolio />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Services --> */}
-        <section>
-          <div>
-            <div>
-              <h6>why choose me</h6>
-              <h2>Best Services for you</h2>
-            </div>
-
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora corporis eveniet, doloribus impedit
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium
-              </p>
-            </div>
-
-            <a href="#">Learn More</a>
-          </div>
-
-          <div>
-            <div>
-              <ImageRoot src={service1.src} />
-
-              <h5>Wedding</h5>
-              <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
-            </div>
-
-            <div>
-              <ImageRoot src={service2.src} />
-
-              <h5>Company Profile</h5>
-              <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
-            </div>
-
-            <div>
-              <figure>
-                <ImageRoot src={service3.src} />
-              </figure>
-
-              <h5>Model Photoshoot</h5>
-              <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
-            </div>
-
-            <div>
-              <figure>
-                <ImageRoot src={service4.src} />
-              </figure>
-
-              <h5>Videography</h5>
-              <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
-            </div>
-          </div>
-        </section>
+        <ContentServices />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Testimonials --> */}
         <section>
