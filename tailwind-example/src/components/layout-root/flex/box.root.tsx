@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-type BoxRootProps = {
+type FlexBoxRootProps = {
   children: ReactNode;
   className?: string;
 };
 
-export const BoxRoot: React.FC<BoxRootProps> = (props) => {
+export const FlexBoxRoot: React.FC<FlexBoxRootProps> = (props) => {
   return (
     <div
       {...props}

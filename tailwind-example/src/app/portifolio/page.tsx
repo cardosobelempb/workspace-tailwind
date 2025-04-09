@@ -14,20 +14,20 @@ import {
   service2,
   service3,
   service4,
-  skills,
   testimonial,
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
+import { FlexContainerRoot } from "@/components/layout-root/flex/flex-container.root";
 import ContentAbount from "@/components/protfolio/portfolio-content/content-about";
 import ContentGallery from "@/components/protfolio/portfolio-content/content-gallery";
 import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
+import ContentSkills from "@/components/protfolio/portfolio-content/content-skills";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
 export default function PortfolioPage() {
   return (
-    <>
+    <FlexContainerRoot className="bg-primary">
       <PortfolioHeader />
-
       <main>
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Motto --> */}
         <ContentMotto />
@@ -39,52 +39,7 @@ export default function PortfolioPage() {
         <ContentGallery />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Skills --> */}
-        <section>
-          <div>
-            <div>
-              <h6>My Skills</h6>
-              <h2>I am experienced in the following fields</h2>
-            </div>
-
-            <div>
-              <p>
-                Lorem ipsum dolor recusandae modi odio, a voluptatem Eos,
-                commodi!
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium doloremque nesciunt
-              </p>
-            </div>
-
-            <div>
-              <div>
-                <h5>Photography</h5>
-                <div>95%</div>
-              </div>
-
-              <div>
-                <h5>Design Thinking</h5>
-                <div>90%</div>
-              </div>
-
-              <div>
-                <h5>Videography</h5>
-                <div>80%</div>
-              </div>
-
-              <div>
-                <h5>Social Innovation</h5>
-                <div>85%</div>
-              </div>
-            </div>
-          </div>
-
-          <figure>
-            <ImageRoot src={skills.src} />
-          </figure>
-        </section>
+        <ContentSkills />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Portfolio --> */}
         <section>
@@ -330,6 +285,6 @@ export default function PortfolioPage() {
           </div>
         </div>
       </footer>
-    </>
+    </FlexContainerRoot>
   );
 }
