@@ -29,10 +29,7 @@ export const HeadingRoot: React.FC<HeadingRootProps> = ({
         );
       case "h3":
         return (
-          <h3
-            {...props}
-            className={`text-lg font-semibold lg:text-xl ${props.className}`}
-          >
+          <h3 {...props} className={`text-lg lg:text-xl ${props.className}`}>
             {props.children}
           </h3>
         );

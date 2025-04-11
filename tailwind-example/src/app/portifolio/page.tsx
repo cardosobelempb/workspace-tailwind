@@ -5,14 +5,13 @@ import {
   contact3,
   contact4,
   form,
-  news1,
-  news2,
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
 import { FlexContainerRoot } from "@/components/layout-root/flex/flex-container.root";
 import ContentAbount from "@/components/protfolio/portfolio-content/content-about";
 import ContentGallery from "@/components/protfolio/portfolio-content/content-gallery";
 import ContentMotto from "@/components/protfolio/portfolio-content/content-motto";
+import ContentNews from "@/components/protfolio/portfolio-content/content-news";
 import ContentPortfolio from "@/components/protfolio/portfolio-content/content-portfolio";
 import ContentServices from "@/components/protfolio/portfolio-content/content-services";
 import ContentSkills from "@/components/protfolio/portfolio-content/content-skills";
@@ -46,51 +45,7 @@ export default function PortfolioPage() {
         <ContentTestimonials />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* News --> */}
-        <section>
-          <div>
-            <div>
-              <h6>news</h6>
-              <h2>Across the world of Photography</h2>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              corporis eveniet, doloribus impedit fuga eum accusamus Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Ab corrupti sapiente
-              illo sint animi inventore
-            </p>
-
-            <a href="#">View News</a>
-          </div>
-
-          <div>
-            <div>
-              <ImageRoot src={news1.src} />
-              <h3>Model Photoshoot</h3>
-              <h6>Dec 24, 2027</h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officia consectetur obcaecati ut nihil placeat.
-              </p>
-              <a href="#">
-                <span>Read More</span> <i></i>
-              </a>
-            </div>
-
-            <div>
-              <ImageRoot src={news2.src} />
-              <h3>Company Profile</h3>
-              <h6>Jan 24, 2028</h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officia consectetur obcaecati ut nihil placeat.
-              </p>
-              <a href="#">
-                <span>Read More</span> <i></i>
-              </a>
-            </div>
-          </div>
-        </section>
+        <ContentNews />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Contact --> */}
         <section>

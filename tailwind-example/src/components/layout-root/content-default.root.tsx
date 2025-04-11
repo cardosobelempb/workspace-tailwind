@@ -12,7 +12,7 @@ export const ContentDefaultRoot: React.FC<ContentDefaultRootProps> = ({
 }) => {
   const flex =
     display === "flex"
-      ? "flex flex-col lg:flex-row gap-5 lg:gap-10 p-6 lg:p-16 *:basis-full"
+      ? "flex flex-col lg:flex-col xl:flex-row gap-5 lg:gap-10 p-6 lg:p-16 *:basis-full"
       : "";
   const grid =
     display === "grid"
