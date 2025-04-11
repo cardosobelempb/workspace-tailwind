@@ -4,8 +4,12 @@ type HeadingRootProps = {
   children: ReactNode;
   className?: string;
   type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  isEffect?: boolean;
 };
-export const HeadingRoot: React.FC<HeadingRootProps> = (props) => {
+export const HeadingRoot: React.FC<HeadingRootProps> = ({
+  isEffect = true,
+  ...props
+}) => {
   {
     switch (props.type) {
       case "h1":
@@ -34,7 +38,13 @@ export const HeadingRoot: React.FC<HeadingRootProps> = (props) => {
         );
       case "h6":
         return (
-          <h6 className="text-sm pl-6 uppercase relative before before:h-1 before:w-4 before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg">
+          <h6
+            className={`text-sm uppercase ${
+              isEffect
+                ? "pl-6 relative before before:h-1 before:w-4 before:top-2/4 before:-translate-y-2/4 before:left-0 lg:text-lg"
+                : ""
+            } ${props.className}`}
+          >
             {props.children}
           </h6>
         );

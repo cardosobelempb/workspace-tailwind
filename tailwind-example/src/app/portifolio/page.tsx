@@ -1,5 +1,4 @@
 import {
-  client,
   contact,
   contact1,
   contact2,
@@ -8,7 +7,6 @@ import {
   form,
   news1,
   news2,
-  testimonial,
 } from "@/app/assets/images/portifolio";
 import { ImageRoot } from "@/components/image-root/image.root";
 import { FlexContainerRoot } from "@/components/layout-root/flex/flex-container.root";
@@ -18,6 +16,7 @@ import ContentMotto from "@/components/protfolio/portfolio-content/content-motto
 import ContentPortfolio from "@/components/protfolio/portfolio-content/content-portfolio";
 import ContentServices from "@/components/protfolio/portfolio-content/content-services";
 import ContentSkills from "@/components/protfolio/portfolio-content/content-skills";
+import ContentTestimonials from "@/components/protfolio/portfolio-content/content-testimonials";
 import PortfolioHeader from "@/components/protfolio/portfolio-header/portfolio-header";
 
 export default function PortfolioPage() {
@@ -44,39 +43,7 @@ export default function PortfolioPage() {
         <ContentServices />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Testimonials --> */}
-        <section>
-          <div>
-            <div>
-              <h6>testimonials</h6>
-              <h2>what my cliens say</h2>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
-              corporis eveniet, doloribus impedit fuga eum accusamus
-            </p>
-
-            <a href="#">View Testimonials</a>
-          </div>
-
-          <div>
-            <ImageRoot src={testimonial.src} />
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              nisi delectus reprehenderit magni rerum recusandae vero aliquam,
-              repudiandae in perspiciatis omnis, repellendus neque sapiente ab
-              beatae explicabo tempora. Amet, ex.
-            </p>
-
-            <div>
-              <ImageRoot src={client.src} />
-
-              <h6>Jane Doe</h6>
-              <p>CEO at XYZ</p>
-            </div>
-          </div>
-        </section>
+        <ContentTestimonials />
 
         {/* <!-- *-*-*-*-*-*-*-*-*-*-*-*-* News --> */}
         <section>
