@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
 
-type ContentDefaultRootProps = {
+type FooterDefaultRootProps = {
   children: ReactNode;
   className?: string;
   display?: "flex" | "grid";
 };
 
-export const ContentDefaultRoot: React.FC<ContentDefaultRootProps> = ({
+export const FooterDefaultRoot: React.FC<FooterDefaultRootProps> = ({
   display = "flex",
   ...props
 }) => {
@@ -19,8 +19,8 @@ export const ContentDefaultRoot: React.FC<ContentDefaultRootProps> = ({
       ? "grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 lg:gap-10 p-6 lg:p-16 2xl:rounded"
       : "";
   return (
-    <section {...props} className={`${flex} ${grid} ${props.className}`}>
+    <footer {...props} className={`${flex} ${grid} ${props.className}`}>
       {props.children}
-    </section>
+    </footer>
   );
 };
