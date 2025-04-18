@@ -1,29 +1,48 @@
-name: CI/CD Deploy para Portainer
+name: Build and Publish Docker Image
 
 on:
   push:
-    branches:
-      - main
+    tags: ["*.*.*"]
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  deploy:
-    name: Build & Push para Git (Portainer Stack)
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
 
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Configurar Git
-        run: |
-          git config --global user.email "claudio.c.lima@hotmail.com"
-          git config --global user.name "cardosobelempb"
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@v3
 
-      - name: Commit de build (se necessário)
-        run: |
-          echo "Nenhum build local necessário, só push automático"
+      - name: Log into registry ${{ env.REGISTRY }}
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push para o repositório remoto
-        run: |
-          git remote set-url origin https://<TOKEN>@github.com/cardosobelempb/workspace-tailwind.git
-          git push origin main
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+      - name: Build and push Docker image
+        id: build-and-push
+        uses: docker/build-push-action@v5
+        with:
+          context: src/
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
