@@ -1,0 +1,29 @@
+name: CI/CD Deploy para Portainer
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Push para Git (Portainer Stack)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Git
+        run: |
+          git config --global user.email "claudio.c.lima@hotmail.com"
+          git config --global user.name "cardosobelempb"
+
+      - name: Commit de build (se necessário)
+        run: |
+          echo "Nenhum build local necessário, só push automático"
+
+      - name: Push para o repositório remoto
+        run: |
+          git remote set-url origin https://<TOKEN>@github.com/cardosobelempb/workspace-tailwind.git
+          git push origin main
