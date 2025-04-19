@@ -8,7 +8,7 @@ services:
   #   restart: always
 
   frontend-web:
-    image: ghcr.io/cardosobelempb/workspace-tailwind:main
+    image: ghcr.io/cardosobelempb/workspace-tailwind:latest
     container_name: frontend-web
     networks:
       - network_public
