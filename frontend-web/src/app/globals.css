@@ -5,28 +5,6 @@
   --foreground: #171717;
 }
 
-[data-theme="dark"] {
-  --color-primary: hsl(0deg 0% 14%);
-  --color-secondary: hsl(0deg 0% 18%);
-  --color-accent: hsl(3deg 74% 65%);
-  --color-text: hsl(0deg 0% 100%);
-  --color-primary-900: hsl(210 10 14);
-  --color-primary-600: hsl(226 9 54);
-  --color-primary-500: hsl(0 0 60);
-  --color-primary-400: hsl(229 8 75);
-  --color-primary-300: hsl(220 25 95);
-  --color-primary-green: hsl(164 75 41);
-  --color-primary-blue: hsl(216 100 58);
-  --color-primary-orange: hsl(18 72 69);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 @theme {
   --color-primary: hsl(0deg 0% 14%);
   --color-secondary: hsl(0deg 0% 18%);

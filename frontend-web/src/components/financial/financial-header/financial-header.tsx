@@ -1,6 +1,6 @@
 import { showcase, showcaseDesign } from "@/app/assets/images/financial";
 import { ImageRoot } from "@/components/image-root/image.root";
-import { ModeToggle } from "@/components/shared/mode-toggle";
+import { FinacialModeToggle } from "@/components/shared/financial-mode-toggle";
 import { MapPin } from "lucide-react";
 
 const FinancialHeader = () => {
@@ -33,9 +33,8 @@ const FinancialHeader = () => {
         </nav>
 
         {/* <!-- -------------------------- Dark Mode --> */}
-        <div>
-          <ModeToggle />
-        </div>
+
+        <FinacialModeToggle />
 
         {/* <!-- -------------------------- Showccase --> */}
         <section className="">
