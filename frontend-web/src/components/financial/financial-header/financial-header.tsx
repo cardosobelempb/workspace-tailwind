@@ -37,16 +37,27 @@ const FinancialHeader = () => {
         <FinacialModeToggle />
 
         {/* <!-- -------------------------- Showccase --> */}
-        <section className="">
-          <div>
-            <h1>The Future of Finance</h1>
-            <p>The best way to invest your money</p>
-            <a href="#"> Get Started </a>
+        <section className="grid items-center gap-y-8 md:grid-cols-2">
+          <div className="flex flex-col gap-y-5">
+            <h1 className="text-4xl font-bold md:text-7xl">
+              The Future of Finance
+            </h1>
+            <p className="text-lg">The best way to invest your money</p>
+            <a
+              className="bg-primary-green px-6 py-2 text-center text-lg text-white shadow-md shadow-primary-green/50 transition duration-200 ease-in-out hover:bg-primary-green/80 hover:shadow-lg sm:self-start"
+              href="#"
+            >
+              {" "}
+              Get Started{" "}
+            </a>
           </div>
 
           <ImageRoot src={showcase.src} />
 
-          <ImageRoot src={showcaseDesign.src} />
+          <ImageRoot
+            classFigure="absolute -z-10 h-96 w-32 hidden md:block dark:hidden"
+            src={showcaseDesign.src}
+          />
         </section>
       </div>
     </header>
