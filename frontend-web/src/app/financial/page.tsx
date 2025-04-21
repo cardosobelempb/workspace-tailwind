@@ -1,19 +1,13 @@
 import FinancialAbount from "@/components/financial/financial-content/financial-about";
+import FinancialFeatures from "@/components/financial/financial-content/financial-features";
+import FinancialProcess from "@/components/financial/financial-content/financial-process";
 import FinancialHeader from "@/components/financial/financial-header/financial-header";
 import { ImageRoot } from "@/components/image-root/image.root";
 import {
-  afterBlue,
-  afterPink,
-  businessFinance,
-  carFinance,
-  homeFinance,
-  lifeFinance,
-  otherFinance,
   quote,
   shieldGreen,
   shieldYellow,
   testimonial,
-  travelFinance,
 } from "../assets/images/financial";
 
 const FinancialPage = () => {
@@ -26,101 +20,11 @@ const FinancialPage = () => {
         <FinancialAbount />
 
         {/* <!-- -------------------------- Features --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <h2>Different Finances for Different Needs</h2>
-              <p>Lorem ipsum dolor sit amet elit adipisicing elit.</p>
-            </div>
 
-            <div>
-              <div>
-                <ImageRoot src={homeFinance.src} />
-
-                <h4>Home Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <ImageRoot src={carFinance.src} />
-
-                <h4>Car Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <ImageRoot src={lifeFinance.src} />
-
-                <h4>Life Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <ImageRoot src={businessFinance.src} />
-
-                <h4>Business Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <ImageRoot src={travelFinance.src} />
-
-                <h4>Travel Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <ImageRoot src={otherFinance.src} />
-
-                <h4>Other Finance</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FinancialFeatures />
 
         {/* <!-- -------------------------- Process --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <h2>Simplified Process</h2>
-              <p>Easy as One, Two, Three</p>
-            </div>
-
-            <div>
-              <div>
-                <p>1</p>
-                <h4>Step One</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <ImageRoot src={afterBlue.src} />
-
-              <div>
-                <p>2</p>
-                <h4>Step Two</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <ImageRoot src={afterPink.src} />
-
-              <div>
-                <p>3</p>
-                <h4>Step Three</h4>
-
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FinancialProcess />
 
         {/* <!-- -------------------------- Testimonial --> */}
         <section className="default-container">
