@@ -5,8 +5,8 @@ import { MapPin } from "lucide-react";
 
 const FinancialHeader = () => {
   return (
-    <header className="dark:bg-primaty-900">
-      <div className="duration-200 2xl:max-w-screen-2xl 2xl:mx-auto flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-primary-blue">
+    <header className="default-container">
+      <div className="default-content default-border">
         <nav className="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:items-start sm:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto *:items-center *:justify-center *:gap-x-3 ">
           <div className="sm:flex-row">
             <a className="py-2 text-2xl font-bold" href="#">

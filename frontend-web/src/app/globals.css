@@ -47,8 +47,15 @@
 }
 
 @layer components {
-  .component {
-    @apply flex flex-col gap-y-12 px-4 py-8 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-primary-blue;
+  .default-container {
+    @apply duration-200  max-w-screen;
+  }
+  .default-content {
+    @apply flex flex-col gap-y-12 px-4 py-8 sm:px-8 lg:px-12 2xl:my-8 2xl:max-w-screen-2xl 2xl:mx-auto sm:py-20;
+  }
+
+  .default-border {
+    @apply 2xl:border 2xl:border-primary-blue 2xl:rounded-2xl;
   }
   .nav {
     @apply flex flex-col gap-6 fixed rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 origin-bottom transition-transform duration-300;

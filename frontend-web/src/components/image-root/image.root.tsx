@@ -16,9 +16,8 @@ type ImageRootProps = ImgHTMLAttributes<HTMLImageElement> & {
 
 export const ImageRoot: React.FC<ImageRootProps> = (props) => {
   return (
-    <figure {...props} className={`${props.classFigure}`}>
+    <figure className={`${props.classFigure}`}>
       <Image
-        {...props}
         className={props.classImage}
         src={props.src}
         alt={props.alt || ""}
