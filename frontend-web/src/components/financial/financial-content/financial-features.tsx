@@ -11,7 +11,7 @@ import Image from "next/image";
 function FinancialFeatures() {
   return (
     <section className="default-container ">
-      <div className="default-content default-border bg-primary-300 dark:bg-primary-900">
+      <div className="default-content default-border">
         <div className="flex flex-col gap-y-5 md:gap-y-3 *:text-center">
           <h2 className="text-2xl font-bold">
             Different Finances for Different Needs

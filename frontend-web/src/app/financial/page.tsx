@@ -1,14 +1,11 @@
 import FinancialAbount from "@/components/financial/financial-content/financial-about";
+import FinacialAct from "@/components/financial/financial-content/financial-act";
 import FinancialFeatures from "@/components/financial/financial-content/financial-features";
 import FinancialProcess from "@/components/financial/financial-content/financial-process";
+import FinacialTestimonial from "@/components/financial/financial-content/financial-testimonial";
 import FinancialHeader from "@/components/financial/financial-header/financial-header";
 import { ImageRoot } from "@/components/image-root/image.root";
-import {
-  quote,
-  shieldGreen,
-  shieldYellow,
-  testimonial,
-} from "../assets/images/financial";
+import { shieldYellow } from "../assets/images/financial";
 
 const FinancialPage = () => {
   return (
@@ -27,41 +24,10 @@ const FinancialPage = () => {
         <FinancialProcess />
 
         {/* <!-- -------------------------- Testimonial --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <ImageRoot src={quote.src} />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
-                aperiam ipsum doloremque tempore blanditiis, velit nulla quam
-                amet pariatur. Vero expedita in harum maiores nostrum dolor,
-                libero veritatis excepturi eveniet.
-              </p>
-
-              <div>
-                <h5>Jane Doe</h5>
-                <p>Legal Consultant, XYZ Corps.</p>
-              </div>
-            </div>
-
-            <ImageRoot src={testimonial.src} />
-          </div>
-        </section>
+        <FinacialTestimonial />
 
         {/* <!-- -------------------------- CTA --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <ImageRoot src={shieldGreen.src} />
-              <div>
-                <h2>Secure Your Future Today</h2>
-                <p>Lorem ipsum dolor sit amet consectetur elit.</p>
-              </div>
-
-              <a href="#"> Get Started </a>
-            </div>
-          </div>
-        </section>
+        <FinacialAct />
 
         {/* <!-- -------------------------- Pricing --> */}
         <section className="default-container">
