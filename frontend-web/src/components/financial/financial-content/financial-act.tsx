@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function FinacialAct() {
   return (
-    <section className="default-container">
+    <section className="default-container ">
       <div
-        className="default-content default-border bg-primary-green py-10 px-4 md:p-24 roundend-lg
+        className="default-content default-border bg-primary-green dark:bg-transparent py-8 px-4 sm:px-12 2xl:my-8 2xl:roundend-2xl 
       "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 bg-white p-10 relative roundend-lg">
-          <figure className="w-32 h-32 md:absolute md:top-0 md:translate-y-[5%] md:-left-0 md:translate-x-[-50%]">
+        <div className="flex flex-col md:w-2xl md:relative gap-y-8 rounded bg-primary-300 dark:text-primary-900 p-8 md:dark:border md:dark:border-primary-green shadow-md shadow-bg-primary-green md:mx-auto md:flex-row items-center justify-center md:justify-around md:gap-x-6 dark:bg-transparent">
+          <figure className="size-24 md:absolute md:top-2/4 md:-translate-y-2/4 md:-left-12">
             <Image
               className=""
               src={shieldGreen.src}
@@ -20,15 +20,17 @@ function FinacialAct() {
               priority
             />
           </figure>
-          <div className="col-start-1 col-end-2 row-start-1 row-end-2 gap-2">
-            <h2 className="text-2xl font-bold">Secure Your Future Today</h2>
-            <p className="text-base font-semibold">
+          <div className="">
+            <h2 className="text-2xl font-bold dark:text-primary-300">
+              Secure Your Future Today
+            </h2>
+            <p className="text-base font-semibold dark:text-primary-600">
               Lorem ipsum dolor sit amet consectetur elit.
             </p>
           </div>
 
           <a
-            className="border-2 border-primary-green text-xl text-center px-10 py-3"
+            className="border border-primary-green text-xl text-center px-6 md:px-5 py-2 dark:text-primary-300"
             href="#"
           >
             Get Started
