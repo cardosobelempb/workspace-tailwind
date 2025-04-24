@@ -6,6 +6,8 @@ import FinacialTestimonial from "@/components/financial/financial-content/financ
 import FinancialHeader from "@/components/financial/financial-header/financial-header";
 import { ImageRoot } from "@/components/image-root/image.root";
 import { shieldYellow } from "../assets/images/financial";
+import FinacialPricing from "@/components/financial/financial-content/financial-pricing";
+import FinacialQa from "@/components/financial/financial-content/financial-qa";
 
 const FinancialPage = () => {
   return (
@@ -30,116 +32,10 @@ const FinancialPage = () => {
         <FinacialAct />
 
         {/* <!-- -------------------------- Pricing --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <h2>Pricing</h2>
-              <p>No Hidden Fees</p>
-            </div>
-
-            <div>
-              <div>
-                <h6>Basic</h6>
-                <h5>
-                  <sup>$</sup>9.99
-                </h5>
-
-                <ul>
-                  <li>
-                    <span></span>Feature 1
-                  </li>
-                  <li>
-                    <span></span>Feature 2
-                  </li>
-                  <li>
-                    <span></span>Feature 3
-                  </li>
-                  <li>
-                    <span></span>Feature 4
-                  </li>
-                </ul>
-
-                <a href="#">Choose Plan</a>
-              </div>
-
-              <div>
-                <h6>Professional</h6>
-
-                <h5>
-                  <sup>$</sup>12.99
-                </h5>
-
-                <ul>
-                  <li>
-                    <span></span>Feature 1
-                  </li>
-                  <li>
-                    <span></span>Feature 2
-                  </li>
-                  <li>
-                    <span></span>Feature 3
-                  </li>
-                  <li>
-                    <span></span>Feature 4
-                  </li>
-                </ul>
-
-                <a href="#">Choose Plan</a>
-              </div>
-
-              <div>
-                <h6>Premium</h6>
-                <h5>
-                  <sup>$</sup>19.99
-                </h5>
-
-                <ul>
-                  <li>
-                    <span></span>Feature 1
-                  </li>
-                  <li>
-                    <span></span>Feature 2
-                  </li>
-                  <li>
-                    <span></span>Feature 3
-                  </li>
-                  <li>
-                    <span></span>Feature 4
-                  </li>
-                </ul>
-
-                <a href="#">Choose Plan</a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FinacialPricing />
 
         {/* <!-- -------------------------- Q&A --> */}
-        <section className="default-container">
-          <div className="default-content default-border">
-            <div>
-              <div>
-                <h6>How do I start?</h6>
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <h6>Is my money safe?</h6>
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <h6>Can I cancel anytime?</h6>
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-
-              <div>
-                <h6>How do I get support?</h6>
-                <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FinacialQa />
 
         {/* <!-- -------------------------- CTA --> */}
         <section className="default-container">
