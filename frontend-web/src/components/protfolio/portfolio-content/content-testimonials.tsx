@@ -4,7 +4,7 @@ import { ImageRoot } from "@/components/image-root/image.root";
 import { BoxDefaultRoot } from "@/components/layout-root/box-default.root";
 import { ContentDefaultRoot } from "@/components/layout-root/content-default.root";
 import { ParagraphRoot } from "@/components/paragraph-root/paragraph.root";
-import LinkDefaultRoot from "@/components/shared/link-default.root";
+import LinkDefaultRoot from "@/components/shared/link.root";
 
 const ContentTestimonials = () => {
   return (

@@ -4,7 +4,7 @@ import { showcase } from "@/app/assets/images/portifolio";
 import { HeadingRoot } from "@/components/heading-root/heading.root";
 import { ImageRoot } from "@/components/image-root/image.root";
 import { ParagraphRoot } from "@/components/paragraph-root/paragraph.root";
-import LinkDefaultRoot from "@/components/shared/link-default.root";
+import LinkDefaultRoot from "@/components/shared/link.root";
 import { Dribbble, Facebook, Twitter, Youtube } from "lucide-react";
 import { useState } from "react";
 
