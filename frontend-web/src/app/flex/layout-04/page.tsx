@@ -44,7 +44,7 @@ export default function FlexPage() {
           </ParagraphRoot>
 
           <div className="flex gap-x-5">
-            <ImageRoot classFigure="w-12 h-12 rounded-full" src={Img01} />
+            <ImageRoot classFigure="w-12 h-12 rounded-full" src={Img01.src} />
             <div>
               <HeadingRoot type="h5">Jane Doe</HeadingRoot>
               <span>Founder LAL</span>
