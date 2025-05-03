@@ -13,65 +13,74 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Image from "next/image";
+import TuneForgeHeading from "./shared/tune-forge-heading";
 
 function TuneForgeLatestAlbum() {
   return (
-    <section>
-      <div>
-        <h2>Latest Album</h2>
+    <section className="container p-4 sm:p-8 md:p-12 lg:p-16 bg-df-blue flex flex-col gap-y-10">
+      <div className="flex flex-col items-center gap-y-12">
+        <TuneForgeHeading />
 
-        <div>
+        <div className="flex flex-col gap-y-4 justify-center">
           <div>
-            <p>
-              <span>Label</span>
-              <span>Reload</span>
+            <p className="text-center text-xl">
+              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
+                Label
+              </span>
+              <span className="border-b-2 border-dotted">Reload</span>
             </p>
-            <p>
-              <span>Released</span>
-              <span>August 2027</span>
+            <p className="text-center text-xl">
+              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
+                Released
+              </span>
+              <span className="border-b-2 border-dotted">August 2027</span>
             </p>
-            <p>
-              <span>Genre</span>
-              <span>Rock/Metal</span>
+            <p className="text-center text-xl">
+              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
+                Genre
+              </span>
+              <span className="border-b-2 border-dotted">Rock/Metal</span>
             </p>
-            <p>
-              <span>Styles</span>
-              <span>Revival</span>
+            <p className="text-center text-xl">
+              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
+                Styles
+              </span>
+              <span className="border-b-2 border-dotted">Revival</span>
             </p>
           </div>
 
-          <ul>
+          <ul className="flex gap-x-4 justify-center *:bg-df-slate/60 *:size-8 ">
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaApple color="#FFFFFF" />
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaGooglePlay color="#FFFFFF" />
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaAmazon color="#FFFFFF" />
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaCloud color="#FFFFFF" />
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaSpotify color="#FFFFFF" />
                 </div>
               </a>
@@ -79,7 +88,7 @@ function TuneForgeLatestAlbum() {
 
             <li>
               <a href="#">
-                <div className="size-8 p-2 bg-slate-500 stroke-white border border-white">
+                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
                   <FaYoutube color="#FFFFFF" />
                 </div>
               </a>

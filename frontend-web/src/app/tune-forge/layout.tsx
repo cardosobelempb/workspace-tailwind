@@ -18,7 +18,7 @@ export default function TuneForgeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="*:font-barlow-condensed 2xl:bg-df-blue selection:bg-df-blue selection:text-df-golden">
+    <div className="*:font-barlow-condensed bg-df-blue selection:bg-df-blue selection:text-df-golden">
       {children}
     </div>
   );
