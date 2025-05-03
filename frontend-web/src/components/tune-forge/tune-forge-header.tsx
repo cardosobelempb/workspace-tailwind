@@ -102,7 +102,7 @@ function TuneForgeHeader() {
         <div
           onClick={handleNavOpen}
           className={`hamburger_tf ${
-            open ? "close__tf" : "open__tf"
+            open ? "open__tf" : "close__tf"
           } sm:hidden flex flex-col gap-y-2.5 justify-center items-center z-50`}
         >
           <div className="h-[2px] w-full bg-white transition-transform"></div>
@@ -111,13 +111,13 @@ function TuneForgeHeader() {
         </div>
       </nav>
 
-      <section>
-        <h1>Welcome to TuneForge</h1>
+      <section className="text-center space-y-5 md:relative tf_before md:before:-top-28 md:before:left-2/4 md:before:-translate-x-2/4 md:before:bg-df-blue/50 md:before:size-96 md:before:rounded-full md:before:border-8 md:before:border-df-golden/50 md:before:blur-sm">
+        <h1 className="text-5xl md:text-7xl">Welcome to TuneForge</h1>
 
-        <p>
-          The official hub of <span>TuneForge</span> where the beats are
-          <span>fresh</span>, the vibe is <span>electric</span>, and the
-          <span>music</span> never stops.
+        <p className="text-lg font-semibold md:text-2xl md:font-medium *:text-df-golden">
+          The official hub of <span> TuneForge</span> where the beats are
+          <span> fresh</span>, the vibe is <span> electric</span>, and the
+          <span> music</span> never stops.
         </p>
       </section>
     </header>
