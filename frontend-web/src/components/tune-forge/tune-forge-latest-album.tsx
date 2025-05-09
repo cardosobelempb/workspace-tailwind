@@ -1,103 +1,31 @@
 import { album } from "@/app/assets/images/tune-forge";
 
-import {
-  FaAmazon,
-  FaApple,
-  FaCloud,
-  FaDownload,
-  FaGooglePlay,
-  FaMusic,
-  FaPlay,
-  FaShoppingCart,
-  FaSpotify,
-  FaYoutube,
-} from "react-icons/fa";
 import Image from "next/image";
+import { FaDownload, FaMusic, FaPlay, FaShoppingCart } from "react-icons/fa";
 import TuneForgeHeading from "./shared/tune-forge-heading";
+import TuneForgeSocial from "./shared/tune-forge-social";
+import TuneForgeCardLatestAlbum from "./shared/tune-forge-card-latest-album";
+import TuneForgeLink from "./shared/tune-forge-link";
 
 function TuneForgeLatestAlbum() {
   return (
-    <section className="container p-4 sm:p-8 md:p-12 lg:p-16 bg-df-blue flex flex-col gap-y-10">
+    <section className="container content bg-df-blue flex flex-col gap-y-10">
       <div className="flex flex-col items-center gap-y-12">
-        <TuneForgeHeading />
+        <TuneForgeHeading heading="Latest Album" />
 
         <div className="flex flex-col gap-y-4 justify-center">
           <div>
-            <p className="text-center text-xl">
-              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
-                Label
-              </span>
-              <span className="border-b-2 border-dotted">Reload</span>
-            </p>
-            <p className="text-center text-xl">
-              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
-                Released
-              </span>
-              <span className="border-b-2 border-dotted">August 2027</span>
-            </p>
-            <p className="text-center text-xl">
-              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
-                Genre
-              </span>
-              <span className="border-b-2 border-dotted">Rock/Metal</span>
-            </p>
-            <p className="text-center text-xl">
-              <span className="uppercase pr-6 relative tf_after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-df-golden/60 after:-z-[1] z-[1]">
-                Styles
-              </span>
-              <span className="border-b-2 border-dotted">Revival</span>
-            </p>
+            <TuneForgeCardLatestAlbum title="Label" subTitle="Reload" />
+            <TuneForgeCardLatestAlbum title="Released" subTitle="August 2027" />
+            <TuneForgeCardLatestAlbum title="Genre" subTitle="Rock/Metal" />
+            <TuneForgeCardLatestAlbum title="Styles" subTitle="Revival" />
           </div>
 
-          <ul className="flex gap-x-4 justify-center *:bg-df-slate/60 *:size-8 ">
-            <li>
-              <a href="#">
-                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaApple color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaGooglePlay color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaAmazon color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaCloud color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div className=" p-2  stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaSpotify color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <div className=" p-2 stroke-white border border-white transition-colors hover:bg-df-golden/60">
-                  <FaYoutube color="#FFFFFF" />
-                </div>
-              </a>
-            </li>
-          </ul>
+          <TuneForgeSocial />
         </div>
       </div>
 
-      <div>
+      <div className="border border-df-golden grid grid-cols-[1fr]">
         <figure>
           <Image
             src={album.src}
@@ -109,106 +37,136 @@ function TuneForgeLatestAlbum() {
           />
         </figure>
 
-        <div>
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Love Alive</h6>
-              <h6>Reload</h6>
+        <div className="divide-y divide-df-golden *:p-4 md:*:px-6 *:flex *:justify-between *:gap-x-2 *:items-center">
+          <div className="">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">Love Alive</h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
             </div>
 
-            <div>
-              <a href="#">
-                <FaDownload />
-                Download
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Hope</h6>
-              <h6>Reload</h6>
-            </div>
-
-            <div>
-              <a href="#">
-                <FaMusic />
-                Lyrics
-              </a>
-              <a href="#">
-                <FaShoppingCart />
-                Purchase
-              </a>
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Download"
+                href="#"
+                icon={FaDownload}
+                className="self-center"
+              />
             </div>
           </div>
 
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Bounce Out</h6>
-              <h6>Reload</h6>
+          <div className="p-4 md:px-6">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">Hope</h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
             </div>
 
-            <div>
-              <a href="#">
-                <FaDownload />
-                Download
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Headspace</h6>
-              <h6>Reload</h6>
-            </div>
-
-            <div>
-              <a href="#">
-                <FaDownload />
-                Download
-              </a>
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Lyrics"
+                href="#"
+                icon={FaMusic}
+                className="self-center"
+              />
+              <TuneForgeLink
+                linkType="golden"
+                title="Purchase"
+                href="#"
+                icon={FaShoppingCart}
+                className="self-center"
+              />
             </div>
           </div>
 
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Tomorrow</h6>
-              <h6>Reload</h6>
+          <div className="p-4 md:px-6">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">Bounce Out</h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
             </div>
 
-            <div>
-              <a href="#">
-                <FaMusic />
-                Lyrics
-              </a>
-              <a href="#">
-                <FaShoppingCart />
-                Purchase
-              </a>
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Download"
+                href="#"
+                icon={FaDownload}
+                className="self-center"
+              />
             </div>
           </div>
 
-          <div>
-            <div>
-              <FaPlay />
-              <h6>Falling Apart</h6>
-              <h6>Reload</h6>
+          <div className="p-4 md:px-6">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">Headspace</h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
             </div>
 
-            <div>
-              <a href="#">
-                <FaDownload />
-                Download
-              </a>
-              <a href="#">
-                <FaShoppingCart />
-                Purchase
-              </a>
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Download"
+                href="#"
+                icon={FaDownload}
+                className="self-center"
+              />
+            </div>
+          </div>
+
+          <div className="p-4 md:px-6">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">Tomorrow</h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
+            </div>
+
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Lyrics"
+                href="#"
+                icon={FaMusic}
+                className="self-center"
+              />
+              <TuneForgeLink
+                linkType="golden"
+                title="Purchase"
+                href="#"
+                icon={FaShoppingCart}
+                className="self-center"
+              />
+            </div>
+          </div>
+
+          <div className="p-4 md:px-6">
+            <div className="grid grid-cols-[min-content_1fr] grid-rows-2 gap-x-[10px] md:gap-x-4">
+              <FaPlay className="w-4 h-4 md:w-8 md:h-8 text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:p-2" />
+              <h6 className="text-sm text-df-golden md:text-xl">
+                Falling Apart
+              </h6>
+              <h6 className="text-sm text-df-golden md:text-xl">Reload</h6>
+            </div>
+
+            <div className="flex gap-x-2 md:gap-x-4">
+              <TuneForgeLink
+                linkType="golden"
+                title="Download"
+                href="#"
+                icon={FaDownload}
+                className="self-center"
+              />
+
+              <TuneForgeLink
+                linkType="golden"
+                title="Purchase"
+                href="#"
+                icon={FaShoppingCart}
+                className="self-center"
+              />
             </div>
           </div>
         </div>
