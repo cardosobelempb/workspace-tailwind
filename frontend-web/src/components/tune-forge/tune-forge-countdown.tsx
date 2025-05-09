@@ -15,7 +15,9 @@ function TuneForgeCountdown() {
     >
       <TuneForgeHeading heading="Upcoming Tour" />
 
-      <p>Friday to Sunday Aug 18 to 20, 2027</p>
+      <p className="text-center text-lg lg:text-2xl">
+        Friday to Sunday Aug 18 to 20, 2027
+      </p>
     </section>
   );
 }
