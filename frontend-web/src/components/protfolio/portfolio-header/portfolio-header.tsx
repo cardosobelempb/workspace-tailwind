@@ -6,17 +6,8 @@ import { ImageRoot } from "@/components/image-root/image.root";
 import { ParagraphRoot } from "@/components/paragraph-root/paragraph.root";
 import LinkDefaultRoot from "@/components/shared/link.root";
 import { Dribbble, Facebook, Twitter, Youtube } from "lucide-react";
-import { useState } from "react";
 
 export default function PortfolioHeader() {
-  const [navbar, setNavibar] = useState(false);
-  const [hamburge, setHamburge] = useState(false);
-
-  const handleOpenHamburge = () => {
-    setNavibar(!navbar);
-    setHamburge(!hamburge);
-  };
-
   return (
     <header className="p-6 bg-primary text-text relative md:space-y-16">
       <nav className={`p-2 flex justify-between items-center`}>
@@ -25,9 +16,7 @@ export default function PortfolioHeader() {
         </a>
 
         <ul
-          className={`nav sm:flex-row sm:scale-y-100 sm:backdrop-blur-0 sm:static sm:p-2 sm:bg-transparent ${
-            navbar ? "scale-y-100" : "scale-y-0"
-          }`}
+          className={`nav hidden md:flex sm:flex-row sm:scale-y-100 sm:backdrop-blur-0 sm:static sm:p-2 sm:bg-transparent`}
         >
           <li className="m-2">
             <a
@@ -63,10 +52,7 @@ export default function PortfolioHeader() {
           </li>
         </ul>
 
-        <div
-          onClick={handleOpenHamburge}
-          className={`hamburger sm:hidden ${hamburge ? "open" : "close"}`}
-        ></div>
+        <div className={`hamburger sm:hidden`}></div>
 
         <LinkDefaultRoot href="#">Book Now</LinkDefaultRoot>
       </nav>

@@ -88,7 +88,8 @@
     @apply 2xl:border 2xl:border-primary-blue 2xl:rounded-2xl;
   }
   .nav {
-    @apply flex flex-col gap-6 fixed rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 origin-bottom transition-transform duration-300;
+    /* @apply flex flex-col gap-6 fixed rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 origin-bottom transition-transform duration-300; */
+    @apply flex flex-row gap-6 fixed rounded p-24 z-20 origin-bottom transition-transform duration-300;
   }
 
   .nav--link {
