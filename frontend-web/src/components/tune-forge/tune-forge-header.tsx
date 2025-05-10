@@ -4,7 +4,7 @@ import { showcase } from "@/app/assets/images/tune-forge";
 import { useState } from "react";
 
 function TuneForgeHeader() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleNavOpen = () => {
     setOpen(!open);

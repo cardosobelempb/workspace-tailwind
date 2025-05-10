@@ -9,7 +9,7 @@ import { Dribbble, Facebook, Twitter, Youtube } from "lucide-react";
 import { useState } from "react";
 
 export default function PortfolioHeader() {
-  const [navbar, setNavibar] = useState(true);
+  const [navbar, setNavibar] = useState(false);
   const [hamburge, setHamburge] = useState(false);
 
   const handleOpenHamburge = () => {
