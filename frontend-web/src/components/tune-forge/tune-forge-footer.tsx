@@ -16,7 +16,7 @@ function TuneForgeFooter() {
     >
       <TuneForgeHeading heading="Stay in Touch" />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid sm:grid-cols-3 gap-5">
         <TuneForgeCardFooter
           email="booking@tuneforge.com"
           title="Booking"

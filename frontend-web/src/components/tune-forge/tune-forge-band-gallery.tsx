@@ -17,8 +17,8 @@ function TuneForgeBandGallery() {
     <section className="container content flex flex-col">
       <TuneForgeHeading heading="Band Gallery" />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-6 gap-5">
-        <figure className="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2">
+      <div className="grid sm:grid-cols-3 grid-rows-6 gap-4">
+        <figure className="sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-2">
           <Image
             src={gallery1.src}
             alt=""
@@ -30,7 +30,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4">
+        <figure className="sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4">
           <Image
             src={gallery2.src}
             alt=""
@@ -42,7 +42,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2">
+        <figure className="sm:col-start-3 sm:col-end-4 sm:row-start-1 sm:row-end-2">
           <Image
             src={gallery3.src}
             alt=""
@@ -54,7 +54,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
+        <figure className="sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-3">
           <Image
             src={gallery4.src}
             alt=""
@@ -66,7 +66,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-3 md:col-end-4 md:row-start-3 md:row-end-5">
+        <figure className="sm:col-start-3 sm:col-end-4 sm:row-start-3 sm:row-end-5">
           <Image
             src={gallery5.src}
             alt=""
@@ -78,7 +78,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-2 md:col-end-4 md:row-start-2 md:row-end-2">
+        <figure className="sm:col-start-2 sm:col-end-4 sm:row-start-2 sm:row-end-2">
           <Image
             src={gallery6.src}
             alt=""
@@ -90,7 +90,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-1 md:col-end-4 md:row-start-5 md:row-end-7">
+        <figure className="sm:col-start-1 sm:col-end-4 sm:row-start-5 sm:row-end-7">
           <Image
             src={gallery7.src}
             alt=""
@@ -102,7 +102,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-1 md:col-end-2 md:row-start-4 md:row-end-5">
+        <figure className="sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5">
           <Image
             src={gallery8.src}
             alt=""
@@ -114,7 +114,7 @@ function TuneForgeBandGallery() {
           />
         </figure>
 
-        <figure className="md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-5">
+        <figure className="sm:col-start-2 sm:col-end-3 sm:row-start-3 sm:row-end-5">
           <Image
             src={gallery9.src}
             alt=""
