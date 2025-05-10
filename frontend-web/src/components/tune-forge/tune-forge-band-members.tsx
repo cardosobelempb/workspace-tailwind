@@ -7,7 +7,7 @@ function TuneForgeBandMembers() {
     <section className="container content flex flex-col">
       <TuneForgeHeading heading="Band Members" />
 
-      <div className="grid md:grid-cols-3 gap-y-8 md:gap-10">
+      <div className="grid sm:grid-cols-3 gap-y-6 sm:gap-8">
         <TuneForgeCardMember
           src={members1.src}
           name="Joe Jade"

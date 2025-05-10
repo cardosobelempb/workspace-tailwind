@@ -23,7 +23,7 @@ function TuneForgeLink({
     case "golden":
       return (
         <a
-          className={`px-3 py-1 md:px-6 bg-df-golden text-sm md:text-lg flex items-center gap-x-3 text-df-blue md:gap-x-4 md:border-2 md:border-white rounded-none ${className}`}
+          className={`px-3 py-1 md:px-6 bg-df-golden text-xs md:text-lg flex items-center gap-x-3 text-df-blue md:gap-x-4 md:border-2 md:border-white rounded-none ${className}`}
           href={href}
         >
           {Icon && <Icon className="md:text-white" />}
@@ -34,7 +34,7 @@ function TuneForgeLink({
     case "blue":
       return (
         <a
-          className={`px-3 py-1 md:px-6 text-sm md:text-lg flex items-center gap-x-3 md:gap-x-4 border-2 rounded-none  ${
+          className={`px-3 py-1 md:px-6 text-xs md:text-lg flex items-center gap-x-3 md:gap-x-4 border-2 rounded-none  ${
             className ? className : "text-white border-white"
           }`}
           href={href}
